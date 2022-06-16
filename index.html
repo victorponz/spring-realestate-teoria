@@ -1,0 +1,16 @@
+---
+layout: default
+title: Spring Boot - Realestate app.
+---
+<h1>Spring Boot - Realestate app</h1>        
+    <blockquote>
+      Vamos a poner en práctica Spring Boot realizando una aplicación para una inmobiliaria
+    </blockquote>
+
+<ol class='portada'> 
+  {% for post in site.posts reversed %}
+      <li><h4><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4></li>
+{% endfor %}
+</ol>
+
+  
